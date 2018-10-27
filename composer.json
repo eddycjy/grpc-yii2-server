@@ -15,8 +15,8 @@
     "require": {
         "php": ">=7.1.0",
         "yiisoft/yii2": "~2.0.14",
-        "grpc/grpc": "v1.12.0",
-        "google/protobuf": "^v3.5.0",
+        "grpc/grpc": "v1.15.0",
+        "google/protobuf": "^v3.6.0",
         "eddycjy/grpc-mri": "^0.2.0"
     },
     "config": {

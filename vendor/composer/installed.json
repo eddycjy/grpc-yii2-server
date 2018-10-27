@@ -285,30 +285,30 @@
     },
     {
         "name": "grpc/grpc",
-        "version": "1.12.0",
-        "version_normalized": "1.12.0.0",
+        "version": "1.15.0",
+        "version_normalized": "1.15.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/grpc/grpc-php.git",
-            "reference": "ad3f6a2bb47475a32a7cdf23da3f67957e0e5aab"
+            "reference": "1a7cd0dc95a68594b8a8cfbf75ff236383172e2f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/grpc/grpc-php/zipball/ad3f6a2bb47475a32a7cdf23da3f67957e0e5aab",
-            "reference": "ad3f6a2bb47475a32a7cdf23da3f67957e0e5aab",
+            "url": "https://api.github.com/repos/grpc/grpc-php/zipball/1a7cd0dc95a68594b8a8cfbf75ff236383172e2f",
+            "reference": "1a7cd0dc95a68594b8a8cfbf75ff236383172e2f",
             "shasum": ""
         },
         "require": {
             "php": ">=5.5.0"
         },
         "require-dev": {
-            "google/auth": "v0.9"
+            "google/auth": "^v1.3.0"
         },
         "suggest": {
             "ext-protobuf": "For better performance, install the protobuf C extension.",
             "google/protobuf": "To get started using grpc quickly, install the native protobuf library."
         },
-        "time": "2018-05-15T22:09:16+00:00",
+        "time": "2018-09-12T21:49:56+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
