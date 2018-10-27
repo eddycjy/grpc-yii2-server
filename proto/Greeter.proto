@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+package greeter;
+
+service Greeter {
+    rpc SayHello(SayHelloRequest) returns (SayHelloResponse) {}
+
+    rpc SayDebug(SayDebugRequest) returns (SayDebugResponse) {}
+
+    rpc SayRepeated(SayRepeatedRequest) returns (SayRepeatedResponse) {}
+}
+
+message Values {
+    string key = 1;
+
+    string value_string = 2;
+
+    int64 value_int64 = 3;
+
+    int32 value_int32 = 4;
+}
+
+message SayHelloRequest {
+    string key = 1;
+
+    int64 value = 2;
+}
+
+message SayHelloResponse {
+    string key = 1;
+
+    int64 value = 2;
+}
+
+message SayDebugRequest {
+    string key = 1;
+
+    int64 value = 2;
+}
+
+message SayDebugResponse {
+    string key = 1;
+
+    repeated Values values = 2;
+}
+
+message SayRepeatedRequest {
+    string key = 1;
+
+    repeated Values values = 2;
+}
+
+message SayRepeatedResponse {
+    string key = 1;
+
+    int64 value_int64 = 2;
+}
