@@ -50,6 +50,12 @@ grpc-yii2-server
 - vendor：第三方依赖包
 - server.php：服务端启动文件
 
+### 生成 Proto 文件
+
+```
+$ protoc -I=.  --php_out=./proto/ --grpc_out=./proto/  --plugin=protoc-gen-grpc=/usr/local/bin/grpc_php_plugin ./proto/*.proto
+```
+
 ### 启动服务
 
 ```
